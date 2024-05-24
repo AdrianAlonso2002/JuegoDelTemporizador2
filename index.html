@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JuegoDelTemporizador2</title>
+    <link rel="shortcut icon" href="img/cronoRosa.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/cronoRosa.png">
+    <link rel="manifest" href="js/manifest.json">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="js/config.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img id="imgtimer" src="img/cronoRosa.png" alt="Cronómetro">
+            <div id="timer">00h:00m:00s</div>
+            <img id="imgtimer" src="img/crono2.png" alt="Cronómetro">
+        </div>
+        <div id="passwords">
+            <div id="pass1">
+                <input type="password" id="password1" size=10 placeholder="Contraseña 1">
+                <img src="img/candado1.png" alt="Icono de contraseña" onclick="checkPassword1()">
+            </div>
+            <div id="pass2">
+                <input type="password" id="password2" size=10 placeholder="Contraseña 2">
+                <img src="img/candado2.png" alt="Icono de contraseña" onclick="checkPassword2()">
+            </div>
+            <div id="pass3">
+                <input type="password" id="password3" size=10 placeholder="Contraseña 3">
+                <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword3()">
+            </div>
+            <div id="pass1">
+                <input type="password" id="password4" size=10 placeholder="Contraseña 4">
+                <img src="img/candado1.png" alt="Icono de contraseña" onclick="checkPassword4()">
+            </div>
+            <div id="pass2">
+                <input type="password" id="password5" size=10 placeholder="Contraseña 5">
+                <img src="img/candado2.png" alt="Icono de contraseña" onclick="checkPassword5()">
+            </div>
+            <div id="pass3">
+                <input type="password" id="password6" size=10 placeholder="Contraseña 6">
+                <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword6()">
+            </div>
+            <div id="pass1">
+                <input type="password" id="password7" size=10 placeholder="Contraseña 7">
+                <img src="img/candado1.png" alt="Icono de contraseña" onclick="checkPassword7()">
+            </div>
+            <div id="pass2">
+                <input type="password" id="password8" size=10 placeholder="Contraseña 8">
+                <img src="img/candado2.png" alt="Icono de contraseña" onclick="checkPassword8()">
+            </div>
+            <div id="pass3">
+                <input type="password" id="password9" size=10 placeholder="Contraseña 9">
+                <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword9()">
+            </div>
+            <div id="pass1">
+                <input type="password" id="password10" size=10 placeholder="Contraseña 10">
+                <img src="img/candado1.png" alt="Icono de contraseña" onclick="checkPassword10()">
+            </div>
+            <div id="pass2">
+                <input type="password" id="password11" size=10 placeholder="Contraseña 11">
+                <img src="img/candado2.png" alt="Icono de contraseña" onclick="checkPassword11()">
+            </div>
+            <div id="pass3">
+                <input type="password" id="password12" size=10 placeholder="Contraseña 12">
+                <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword12()">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="images">
+            <div>
+                <img src="img/foto.png" alt="Imagen 1">
+                <p hidden></p>
+                <button onclick="mostrarPista(0)" hidden>Pista</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 2">
+                <p hidden></p>
+                <button onclick="mostrarPista(1)" hidden>Pista</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 3">
+                <p hidden></p>
+                <button onclick="mostrarPista(2)" hidden>Pista</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 4">
+                <p hidden></p>
+                <button onclick="mostrarPista(3)" hidden>Pista</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 5">
+                <p hidden></p>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 6">
+                <p hidden></p>
+                <button onclick="mostrarPista(5)" hidden>Pista</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 7">
+                <p hidden></p>
+                <button onclick="mostrarPista(6)" hidden>Pista</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 8">
+                <p hidden></p>
+                <button onclick="mostrarPista(7)" hidden>Pista</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 9">
+                <p hidden></p>
+                <button onclick="mostrarPista(8)" hidden>Pista</button>
+            </div>
+        </div>
+    </br>
+        <div id="cajas">
+            <div id="caja1">
+                </br>
+                <div id="diales-container">
+                </div>
+                <img src="img/Caja1.png" id="cajaImagen1" alt="Caja fuerte cerrada">
+                <div id="botones-container">
+                    
+                </div>
+                </br>
+            </div>
+            <div id="caja2">
+                </br>
+                <img src="img/Caja2.png" id="cajaImagen2" alt="Caja fuerte cerrada">
+                <div id="botones-container">
+                    <input type="text" id="passwordcaja2" size=30 placeholder="">
+                </div>
+                </br>
+            </div>
+            <div id="caja3">
+                </br>
+                <div id="diales-container">
+                    <div id="dial1">0</div>
+                    <div id="dial2">0</div>
+                    <div id="dial3">0</div>
+                    <div id="dial4">0</div>
+                    <div id="dial5">0</div>
+                    <div id="dial6">0</div>
+                </div>
+                <img src="img/Caja3.png" id="cajaImagen3" alt="Caja fuerte cerrada">
+                <div id="botones-container">
+                    <button onclick="turnCaja(-1)">Izquierda</button>
+                    <button onclick="siguienteDial()">Siguiente</button>
+                    <button onclick="turnCaja(1)">Derecha</button>
+                </div>
+                </br>
+            </div>
+            </br>
+        </div>
+    </main>
+</body>
+
+</html>
