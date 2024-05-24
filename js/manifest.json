@@ -1,7 +1,7 @@
 {
     "name": "JuegoDelTemporizador2",
     "short_name": "Temporizador2",
-    "start_url": "/",
+    "start_url": "https://adrianalonso2002.github.io/JuegoDelTemporizador2/",
     "display": "standalone",
     "icons": [
       {
