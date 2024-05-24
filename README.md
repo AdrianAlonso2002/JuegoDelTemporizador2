@@ -1,6 +1,7 @@
 # JuegoDelTemporizador2
 
 Cosas por hacer:
+
 -Cambiar colores e imagenes candados.
 -Otra que se abra a cierta hora y día con cierta acción/palabra
 -Otra que se abra con un código
@@ -19,6 +20,7 @@ Cosas hechas:
 
 
 Cosas por mejorar:
+
 -Si acierta pista, añadir reloj no antes
 -Guardar avances
 -Mejorar Animaciones
