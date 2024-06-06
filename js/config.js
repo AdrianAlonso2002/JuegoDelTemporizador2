@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function () {
             checkPassword1();
         }
     }
-    passwordInput.addEventListener("keypress", handleEnterKey);
+    passwordInput.addEventListener("keydown", handleEnterKey);
 });
 //Comprobar enter contraseña2
 document.addEventListener("DOMContentLoaded", function () {
