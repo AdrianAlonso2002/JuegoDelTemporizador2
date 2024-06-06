@@ -18,7 +18,12 @@
 <body>
     <header>
         <div class="header-top">
-            <img id="imgtimer" src="img/cronoRosa.png" alt="Cronómetro">
+            <img id="imgtimer" src="img/cronoRosa.png" alt="Cronómetro" onclick="incrementarContadorCaja1()">
+            <div id="vidas">
+                <img src="img/vida.png" alt="Vida 1" class="vida">
+                <img src="img/vida.png" alt="Vida 2" class="vida">
+                <img src="img/vida.png" alt="Vida 3" class="vida">
+            </div>
             <div id="timer">00h:00m:00s</div>
             <img id="imgtimer" src="img/crono2.png" alt="Cronómetro">
         </div>
@@ -35,39 +40,39 @@
                 <input type="password" id="password3" size=10 placeholder="Contraseña 3">
                 <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword3()">
             </div>
-            <div id="pass1">
+            <div id="pass4">
                 <input type="password" id="password4" size=10 placeholder="Contraseña 4">
                 <img src="img/candado1.png" alt="Icono de contraseña" onclick="checkPassword4()">
             </div>
-            <div id="pass2">
+            <div id="pass5">
                 <input type="password" id="password5" size=10 placeholder="Contraseña 5">
                 <img src="img/candado2.png" alt="Icono de contraseña" onclick="checkPassword5()">
             </div>
-            <div id="pass3">
+            <div id="pass6">
                 <input type="password" id="password6" size=10 placeholder="Contraseña 6">
                 <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword6()">
             </div>
-            <div id="pass1">
+            <div id="pass7">
                 <input type="password" id="password7" size=10 placeholder="Contraseña 7">
                 <img src="img/candado1.png" alt="Icono de contraseña" onclick="checkPassword7()">
             </div>
-            <div id="pass2">
+            <div id="pass8">
                 <input type="password" id="password8" size=10 placeholder="Contraseña 8">
                 <img src="img/candado2.png" alt="Icono de contraseña" onclick="checkPassword8()">
             </div>
-            <div id="pass3">
+            <div id="pass9">
                 <input type="password" id="password9" size=10 placeholder="Contraseña 9">
                 <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword9()">
             </div>
-            <div id="pass1">
+            <div id="pass10">
                 <input type="password" id="password10" size=10 placeholder="Contraseña 10">
                 <img src="img/candado1.png" alt="Icono de contraseña" onclick="checkPassword10()">
             </div>
-            <div id="pass2">
+            <div id="pass11">
                 <input type="password" id="password11" size=10 placeholder="Contraseña 11">
                 <img src="img/candado2.png" alt="Icono de contraseña" onclick="checkPassword11()">
             </div>
-            <div id="pass3">
+            <div id="pass12">
                 <input type="password" id="password12" size=10 placeholder="Contraseña 12">
                 <img src="img/candado3.png" alt="Icono de contraseña" onclick="checkPassword12()">
             </div>
@@ -78,64 +83,75 @@
             <div>
                 <img src="img/foto.png" alt="Imagen 1">
                 <p hidden></p>
-                <button onclick="mostrarPista(0)" hidden>Pista</button>
+                <button onclick="mostrarPista(0)" hidden>Pista 1</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 2">
                 <p hidden></p>
-                <button onclick="mostrarPista(1)" hidden>Pista</button>
+                <button onclick="mostrarPista(1)" hidden>Pista 2</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 3">
                 <p hidden></p>
-                <button onclick="mostrarPista(2)" hidden>Pista</button>
+                <button onclick="mostrarPista(2)" hidden>Pista 3</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 4">
                 <p hidden></p>
-                <button onclick="mostrarPista(3)" hidden>Pista</button>
+                <button onclick="mostrarPista(3)" hidden>Pista 4</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 5">
                 <p hidden></p>
+                <button onclick="mostrarPista(4)" hidden>Pista 5</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 6">
                 <p hidden></p>
-                <button onclick="mostrarPista(5)" hidden>Pista</button>
+                <button onclick="mostrarPista(5)" hidden>Pista 6</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 7">
                 <p hidden></p>
-                <button onclick="mostrarPista(6)" hidden>Pista</button>
+                <button onclick="mostrarPista(6)" hidden>Pista 7</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 8">
                 <p hidden></p>
-                <button onclick="mostrarPista(7)" hidden>Pista</button>
+                <button onclick="mostrarPista(7)" hidden>Pista 8</button>
             </div>
             <div>
                 <img src="img/foto.png" alt="Imagen 9">
                 <p hidden></p>
-                <button onclick="mostrarPista(8)" hidden>Pista</button>
+                <button onclick="mostrarPista(8)" hidden>Pista 9</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 10">
+                <p hidden></p>
+                <button onclick="mostrarPista(9)" hidden>Pista 10</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 11">
+                <p hidden></p>
+                <button onclick="mostrarPista(10)" hidden>Pista 11</button>
+            </div>
+            <div>
+                <img src="img/foto.png" alt="Imagen 12">
+                <p hidden></p>
+                <button onclick="mostrarPista(11)" hidden>Pista 12</button>
             </div>
         </div>
     </br>
         <div id="cajas">
             <div id="caja1">
                 </br>
-                <div id="diales-container">
-                </div>
                 <img src="img/Caja1.png" id="cajaImagen1" alt="Caja fuerte cerrada">
-                <div id="botones-container">
-                    
-                </div>
                 </br>
             </div>
             <div id="caja2">
                 </br>
                 <img src="img/Caja2.png" id="cajaImagen2" alt="Caja fuerte cerrada">
-                <div id="botones-container">
+                <div id="passcaja2">
                     <input type="text" id="passwordcaja2" size=30 placeholder="">
                 </div>
                 </br>
@@ -159,6 +175,9 @@
                 </br>
             </div>
             </br>
+        </div>
+        <div class="blackout" id="gameOverMessage" style="display: none;">
+            <h1>Has perdido</h1>
         </div>
     </main>
 </body>

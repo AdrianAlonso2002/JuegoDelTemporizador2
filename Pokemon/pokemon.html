@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Pokemon</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <link rel="shortcut icon" href="../img/cronoRosa.png" type="image/x-icon">
+    	<link rel="apple-touch-icon" href="../img/cronoRosa.png">
+	    <link href="https://fonts.googleapis.com/css?family=Exo+2|Orbitron|Sniglet|Varela+Round&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="./source/css/estilos.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+	</head>
+	<body>
+
+		<div class="timer" id="container__timer1">
+			<p>Cargando...</p>
+			<img class="imgcharging" alt="loadinn_Gif" src="https://media.giphy.com/media/WBpJbqS9hFsic/giphy.gif">
+		</div>
+
+		<div class="container" id="container__start">
+			<h2>Batalla contra Adri</h2>
+			<p>El combate es 1 vs 1, en la parte superior se mostrará la sección que indique el turno de cada jugador</p>
+			<p>Si ganas Adri te dirá la contraseña, si no, perderás una vida, piensatelo bien antes de empezar</p>
+			<p>No lo intentes por intentar! Mientras juegas te puedes informar de los movimientos para ver que hacen!</p>
+			<p>Con un solo golpe basta para ganar el combate!</p>
+			<button class="btn" id="btnStart">Empezar</button>
+		</div>
+
+		<div class="container" id="container__turno">
+			<section class="container__turno--player" id="p1">
+				<h3>Player 1</h3>
+				<p class="displayText" id="namePlayer1"></p>
+			</section>
+			<h2 class="container__turno--textTurno">
+				Turno
+			</h2>
+			<section class="container__turno--player" id="p2">
+				<h3>Player 2</h3>
+				<p class="displayText" id="namePlayer2"></p>
+			</section>
+		</div>
+
+		<div class="container" id="container__choose-playerName">
+			<h2>
+				Bien, tu nombre es...
+			</h2>
+		    <div class="container__playerName">
+		      	<img src="source/images/nomb.png" alt="Maestro Pokemon" width="200">
+				<form id="formName" class="form">
+					<input type="text" placeholder="Paaolita" class="txt" id="txtPlayerName">
+				</form>
+				<button class="btn" id="btnPlayerName">Aceptar</button>
+		    </div>
+		</div>
+
+	    <div class="container hide" id="container__dito">
+	    	<h3>Elejiste a dito !!</h3>
+	    	<img id="imgDito">
+	    	<p>Has elejido a dito, selecciona el ID del pokemon en que quieres usar la habilidad: <strong>Transformación</strong>.</p>
+	    	<button class="btn" id="btnDito">Aceptar</button>
+	    </div>
+
+		<div class="timer hide" id="container__timer2">
+			<p id="timer">Que gane el mejor!!</p>
+			<img class="imgcharging" alt="loading_Gif" src="https://media.giphy.com/media/WBpJbqS9hFsic/giphy.gif">
+		</div>
+
+		<div class="container" id="container__pokemonInfo--battle">
+			<div class="container__pokemonInfo">
+				<div class="container__pokemonInfo--info">
+					<div class="pokemonInfo--info__datosPokemon" id="datosPokemon1">
+						<p>Nombre:</p>
+						<p>Tipo:</p>
+						<p>Nivel:</p>
+						<p>Vida:</p>
+					</div>
+					<div class="pokemonInfo--info__pokemonElegido" id="pokemonElegido1">
+						<p class="displayText" id="pokemonName1"></p>
+						<p class="displayText" id="pokemonType1"></p>
+						<p class="displayText" id="pokemonLevel1"></p>
+						<p class="displayText" id="pokemonLife1"></p>
+					</div>
+				</div>
+				<div class="container__pokemonInfo--info">
+					<div class="pokemonInfo--info__datosPokemon" id="datosPokemon2">
+						<p>Nombre:</p>
+						<p>Tipo:</p>
+						<p>Nivel:</p>
+						<p>Vida:</p>
+					</div>
+					<div class="pokemonInfo--info__pokemonElegido" id="pokemonElegido2">
+						<p class="displayText" id="pokemonName2"></p>
+						<p class="displayText" id="pokemonType2"></p>
+						<p class="displayText" id="pokemonLevel2"></p>
+						<p class="displayText" id="pokemonLife2"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container__battle">
+				<div class="container__battle--battle">
+					<div class="container__battle--battleButtons" id="battleButtonsA">
+						<input type="button" class="btnAtaque" id="ataque1a" />
+						<input type="button" class="btnAtaque" id="ataque2a" />
+						<input type="button" class="btnAtaque" id="ataque3a" />
+					</div>
+
+					<div class="battleMap" id="battleMapID">
+						<img id="imgPoke1">
+						<img id="imgPoke2">
+					</div>
+
+					<div class="container__battle--battleButtons" id="battleButtonsB">
+						<input type="button" class="btnAtaque" id="ataque1b" />
+						<input type="button" class="btnAtaque" id="ataque2b" />
+						<input type="button" class="btnAtaque" id="ataque3b" />
+					</div>
+				</div>
+				<p class="displayText" id="battle-text">Comienza la batalla, mira el indicador sobre el nombre del player para saber de quien es el turno</p>
+			</div>
+		</div>
+
+	    <script src="./source/js/pokemon.js"></script>
+	    <script src='./source/js/index.js'></script>
+	</body>
+</html>
