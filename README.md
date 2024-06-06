@@ -143,61 +143,6 @@ Ruta:
     ·Imagen:
 
 
--Pistas: 
 
- Clave secreta:
- [2, 9, 5]
- [7, 3, 4]
- [8, 1, 6] 
-
-"Dos números comunes pero en la posición equivocada: 4 y 2."
-Ejemplo: [4, 2, X] o [X, 4, 2] (donde X representa cualquier número)
-
-"Dos números comunes pero en la posición equivocada: 6 y 2."
-Ejemplo: [6, 2, X] o [X, 6, 2]
-
-"El producto de los tres números al cubo: 110592"
-Esto implica que 2 * 4 * 6 = 48^3 = 110592
-
-C1: [suerte]
-
-C2: Anagrama: aebtib [bebita]
-
-C3: Codificado: CUVWTKCU [asturias] 2->
-
-C4: Adivinanza: [funko]
-    En dos cuartos me hallo, sin moverme de lugar,
-    Un puente entre dos mundos, En uno soy magia, en otro soy deseos, 
-    ¿Qué soy? Piénsalo con empeño, este acertijo es un reto.
-
-Ca1: salup zadoriropmet choum odaros le - Pulsa mucho el temporizador [rosado]
-
-C5: Rompecabezas imagenes: [junio]
-
-C6: Rompecabezas: [beso]
-
-C7: Adivinanza: [dominada]
-    Me sostengo con firmeza...
-    Desafía la gravedad...
-    Me elevo como en el aire...
-    El tiempo dará frutos...
-
-C8: Codificado2: YRIÑLZDFWM [bollicaito] <-3 3->
-
-1Ca2: Anagrama2: atos [sota]
-
-2Ca2: [experta]
-
-C9: Demonio te sigue [correr]
-
-C10: Codificado3: РИНAMИСOНЮ [ronymisina] Ruso
-
-C11: Clave secreta [110592]
-
-C12: Combate pokémon contra Adri [recuerdos]
-
-Ca3: Recoge todas las contraseñas que hayas tenido que poner sin contar las cajas, haz la suma de cada letra alfabeticamente, o no,y sumala para que te de una parte del código, las 4 primeras son contraseñas pares y las dos últimas inpares.
-
-bebita 39, funko 67, beso 41, bollicaito 98, correr 77, 110592 15 [396741987715]
 
 
