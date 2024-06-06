@@ -268,11 +268,13 @@ function actualizarVidas() {
 //Comprobar enter contraseña1
 document.addEventListener("DOMContentLoaded", function () {
     const passwordInput = document.getElementById("password1");
-    passwordInput.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
+    function handleEnterKey(event) {
+        if (event.key === "Enter" || event.keyCode === 13) {
+            event.preventDefault(); 
             checkPassword1();
         }
-    });
+    }
+    passwordInput.addEventListener("keypress", handleEnterKey);
 });
 //Comprobar enter contraseña2
 document.addEventListener("DOMContentLoaded", function () {
