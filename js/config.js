@@ -54,10 +54,10 @@ function updateTimer() {
     }
     //Password2 Imagen-Pista
     if (hours < 24 && localStorage.getItem(`password2`) === 'desbloqueada' && localStorage.getItem(`password3`) !== 'desbloqueada') {
-        document.querySelectorAll('#images p')[1].innerText = 'Es un anagrama.';
+        document.querySelectorAll('#images p')[1].innerText = 'CUVWTKCV';
         document.querySelectorAll('#images button')[1].removeAttribute('hidden');
     } else if (localStorage.getItem(`password2`) === 'desbloqueada' && localStorage.getItem(`password3`) === 'desbloqueada') {
-        document.querySelectorAll('#images p')[1].innerText = 'Es un anagrama.';
+        document.querySelectorAll('#images p')[1].innerText = 'CUVWTKCV';
         document.querySelectorAll('#images button')[1].removeAttribute('hidden');
     }
     //Password3 Pista+Imagen
