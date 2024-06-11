@@ -53,9 +53,6 @@ function advance() {
                 title: 'Has huido del demonio!',
                 text: 'La contraseña es: correr',
                 confirmButtonText: 'Menos mal...',
-                customClass: {
-                    popup: 'my-popup-class',
-                }
             });
         }
     } else if (currentVolume > 0.8) {
@@ -70,9 +67,6 @@ function advance() {
                 title: 'Has huido del demonio!',
                 text: 'La contraseña es: correr',
                 confirmButtonText: 'Menos mal...',
-                customClass: {
-                    popup: 'my-popup-class',
-                }
             });
         }
     }
@@ -139,13 +133,13 @@ function triggerJumpscare() {
     jumpscareSound.play();
     setTimeout(() => {
         Swal.fire({
-            icon: 'error',
-            title: 'El demonio te ha pillado!',
-            text: 'Intenta huir sin que te pille!',
-            confirmButtonText: 'Que miedo...',
-            customClass: {
-                popup: 'my-popup-class',
-            }
-        });
+            title: "El demonio te ha pillado!",
+            text: "Intenta huir sin que te pille!",
+            imageUrl: "demonio.jpg",
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: "Demonio",
+            confirmButtonText: 'Que miedo...'
+          });
     }, 1000);
 }

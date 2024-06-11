@@ -54,10 +54,10 @@ function updateTimer() {
     }
     //Password2 Imagen-Pista
     if (hours < 24 && localStorage.getItem(`password2`) === 'desbloqueada' && localStorage.getItem(`password3`) !== 'desbloqueada') {
-        document.querySelectorAll('#images p')[1].innerText = 'CUVWTKCU';
+        document.querySelectorAll('#images p')[1].innerText = 'Es un anagrama.';
         document.querySelectorAll('#images button')[1].removeAttribute('hidden');
     } else if (localStorage.getItem(`password2`) === 'desbloqueada' && localStorage.getItem(`password3`) === 'desbloqueada') {
-        document.querySelectorAll('#images p')[1].innerText = 'CUVWTKCU';
+        document.querySelectorAll('#images p')[1].innerText = 'Es un anagrama.';
         document.querySelectorAll('#images button')[1].removeAttribute('hidden');
     }
     //Password3 Pista+Imagen
@@ -138,9 +138,6 @@ function perderVida() {
             title: 'Has Perdido todas las vidas',
             text: 'Se acabó el juego.',
             confirmButtonText: 'NOO',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         return;
     } else if (vidas > 0) {
@@ -167,9 +164,6 @@ function perderVida() {
                     title: 'Pista Final Contraseña ' + i,
                     text: pistas[i - 1],
                     confirmButtonText: 'Vale',
-                    customClass: {
-                        popup: 'my-popup-class',
-                    }
                 });
                 iniciarTemporizador(24);
                 return;  // Salir de la función si una contraseña no está desbloqueada
@@ -182,9 +176,6 @@ function perderVida() {
                 title: 'Pista Final Caja 1',
                 text: 'Intenta sacar una frase de la pista',
                 confirmButtonText: 'Vale',
-                customClass: {
-                    popup: 'my-popup-class',
-                }
             });
             iniciarTemporizador(24);
             return;  // Salir de la función si la caja1 no está desbloqueada
@@ -198,9 +189,6 @@ function perderVida() {
                     title: 'Pista Final ' + i,
                     text: pistas[i - 1],
                     confirmButtonText: 'Vale',
-                    customClass: {
-                        popup: 'my-popup-class',
-                    }
                 });
                 iniciarTemporizador(24);
                 return;  // Salir de la función si una contraseña no está desbloqueada
@@ -213,9 +201,6 @@ function perderVida() {
                 title: 'Pista Final Caja 2',
                 text: 'sota?',
                 confirmButtonText: 'Vale',
-                customClass: {
-                    popup: 'my-popup-class',
-                }
             });
             iniciarTemporizador(24);
             return;  // Salir de la función si la caja2 no está desbloqueada
@@ -229,9 +214,6 @@ function perderVida() {
                     title: 'Pista Final ' + i,
                     text: pistas[i - 1],
                     confirmButtonText: 'Vale',
-                    customClass: {
-                        popup: 'my-popup-class',
-                    }
                 });
                 iniciarTemporizador(24);
                 return;  // Salir de la función si una contraseña no está desbloqueada
@@ -244,9 +226,6 @@ function perderVida() {
                 title: 'Pista Final Caja 2',
                 text: 'Suma alfabeticamente los 4 pares y luego los dos impares restantes',
                 confirmButtonText: 'Vale',
-                customClass: {
-                    popup: 'my-popup-class',
-                }
             });
             iniciarTemporizador(24);
             return;  // Salir de la función si la caja3 no está desbloqueada
@@ -396,9 +375,6 @@ function checkPassword1() {
             title: 'Enhorabuena has acertado la primera contraseña',
             text: 'Se ha desbloqueado una pista, cuando le queden 24 horas al temporizador, se desbloqueara una imagen de la misma, tienes 48 horas para resolver el acertijo o perderás una vida!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password1.disabled = true;
@@ -424,9 +400,6 @@ function checkPassword1() {
             title: 'Primera contraseña desbloqueada',
             text: 'Se desbloqueó una pista, cuando le queden 24 horas al temporizador, se desbloquea una imagen de la misma, tienes 48 horas para resolver el acertijo o perderás una vida!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -434,9 +407,6 @@ function checkPassword1() {
             title: 'Contraseña Incorrecta',
             text: 'Lee bien la pista',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -451,9 +421,6 @@ function checkPassword2() {
             title: 'Enhorabuena has acertado la segunda contraseña',
             text: 'Se ha desbloqueado una imagen, en 24 horas se desbloqueara una pista, tienes de nuevo 48 horas!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password2.disabled = true;
@@ -479,9 +446,6 @@ function checkPassword2() {
             title: 'Segunda contraseña desbloqueada',
             text: 'Se desbloqueó una imagen, en 24 horas se desbloqueara una pista, tienes de nuevo 48 horas!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -489,9 +453,6 @@ function checkPassword2() {
             title: 'Contraseña Incorrecta',
             text: 'Revisa la pista bien',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -506,9 +467,6 @@ function checkPassword3() {
             title: 'Enhorabuena, has acertado la tercera contraseña!',
             text: 'Se ha desbloqueado una imagen y una pista',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password3.disabled = true;
@@ -536,9 +494,6 @@ function checkPassword3() {
             title: 'Tercera contraseña desbloqueada!',
             text: 'Se desbloqueó una imagen y una pista',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -546,9 +501,6 @@ function checkPassword3() {
             title: 'Contraseña Incorrecta',
             text: 'Fíjate bien',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -563,9 +515,6 @@ function checkPassword4() {
             title: 'Enhorabuena has acertado la cuarta contraseña, es el turno de abrir la caja de bronce:',
             text: 'salup zadoriropmet choum odaros le',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password4.disabled = true;
@@ -590,9 +539,6 @@ function checkPassword4() {
             title: 'Es el turno de abrir la caja de bronce:',
             text: 'salup zadoriropmet choum odaros le',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else if (localStorage.getItem(`pista4`) === 'desbloqueada' && localStorage.getItem(`caja1`) === 'desbloqueada') {
         Swal.fire({
@@ -600,9 +546,6 @@ function checkPassword4() {
             title: 'Enhorabuena has desbloqueado la cuarta contraseña y abierto la caja de bronce!',
             text: 'Se ha desbloqueado una nueva imagen y más tarde una pista, suerte!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -610,9 +553,6 @@ function checkPassword4() {
             title: 'Contraseña Incorrecta',
             text: 'Piensalo bien',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -627,9 +567,6 @@ function checkPassword5() {
             title: 'Quinta contraseña correcta!',
             text: 'Se ha desbloqueado una imagen y una pista más tarde!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password5.disabled = true;
@@ -663,9 +600,6 @@ function checkPassword5() {
             title: 'Quinta contraseña correcta!',
             text: 'Se ha desbloqueado una imagen y una pista más tarde!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -673,9 +607,6 @@ function checkPassword5() {
             title: 'Contraseña Incorrecta',
             text: 'Revisa las imagenes, es fácil',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -690,9 +621,6 @@ function checkPassword6() {
             title: 'Sexta contraseña correcta!',
             text: 'Se ha desbloqueado una pista y una imagen más tarde!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password6.disabled = true;
@@ -719,9 +647,6 @@ function checkPassword6() {
             title: 'Sexta contraseña correcta!',
             text: 'Se desbloqueó una pista y una imagen más tarde!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -729,9 +654,6 @@ function checkPassword6() {
             title: 'Contraseña Incorrecta',
             text: 'Ten paciencia',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -746,9 +668,6 @@ function checkPassword7() {
             title: 'Septima contraseña correcta muy bien',
             text: 'Se ha desbloqueado una pista y una imagen después!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña;
         password7.disabled = true;
@@ -775,9 +694,6 @@ function checkPassword7() {
             title: 'Septima contraseña correcta muy bien',
             text: 'Se ha desbloqueado una pista y una imagen después!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -785,9 +701,6 @@ function checkPassword7() {
             title: 'Contraseña Incorrecta',
             text: 'Es más dificil eh',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -802,9 +715,6 @@ function checkPassword8() {
             title: 'Octava contraseña correcta, es el turno de abrir la caja de plata:',
             text: 'atos',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password8.disabled = true;
@@ -829,9 +739,6 @@ function checkPassword8() {
             title: 'Es el turno de abrir la caja de plata:',
             text: 'atos',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else if (localStorage.getItem(`pista8`) === 'desbloqueada' && localStorage.getItem(`caja2`) === 'desbloqueada') {
         Swal.fire({
@@ -839,9 +746,6 @@ function checkPassword8() {
             title: 'Enhorabuena has desbloqueado la octava contraseña y abierto la caja de plata!',
             text: 'Se desbloqueó una nueva imagen y más tarde una pista, suerte!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -849,9 +753,6 @@ function checkPassword8() {
             title: 'Contraseña Incorrecta',
             text: 'JiJiJi',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -866,9 +767,6 @@ function checkPassword9() {
             title: 'Novena contraseña correcta!',
             text: 'Se ha desbloqueado una pista y una imagen más tarde!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password9.disabled = true;
@@ -895,9 +793,6 @@ function checkPassword9() {
             title: 'Novena contraseña correcta!',
             text: 'Se desbloqueó una pista y una imagen se desbloqueará más tarde!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -905,9 +800,6 @@ function checkPassword9() {
             title: 'Contraseña Incorrecta',
             text: 'Suerte huyendo del demonio',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -922,9 +814,6 @@ function checkPassword10() {
             title: 'Décima contraseña correcta!',
             text: 'Se ha desbloqueado una pista y una imagen!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password10.disabled = true;
@@ -952,9 +841,6 @@ function checkPassword10() {
             title: 'Décima contraseña correcta!',
             text: 'Se desbloqueó una pista y una imagen!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -962,9 +848,6 @@ function checkPassword10() {
             title: 'Contraseña Incorrecta',
             text: 'Es raro, ¿verdad?',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -979,9 +862,6 @@ function checkPassword11() {
             title: 'Undécima contraseña correcta!',
             text: 'Se ha desbloqueado una pista y una imagen!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password11.disabled = true;
@@ -1017,9 +897,6 @@ function checkPassword11() {
             title: 'Undécima contraseña correcta!',
             text: 'Se ha desbloqueado una pista y una imagen!',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -1027,9 +904,6 @@ function checkPassword11() {
             title: 'Contraseña Incorrecta',
             text: 'Tendrás que volver a intentarlo',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -1044,9 +918,6 @@ function checkPassword12() {
             title: 'Duodécima contraseña correcta! La caja de oro te espera:',
             text: 'Recoge todas las contraseñas sin contar las cajas, haz la suma de cada letra alfabeticamente, o no, y sumala para que te de una parte del código, las 4 primeras son contraseñas pares y las dos últimas inpares.',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         //Guardado contraseña
         password12.disabled = true;
@@ -1071,9 +942,6 @@ function checkPassword12() {
             title: 'Duodécima contraseña correcta! La caja de oro te espera:',
             text: 'Recoge todas las contraseñas sin contar las cajas, haz la suma de cada letra alfabeticamente, o no, y sumala para que te de una parte del código, las 4 primeras son contraseñas pares y las dos últimas inpares.',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else if (localStorage.getItem(`pista12`) === 'desbloqueada' && localStorage.getItem(`caja3`) === 'desbloqueada') {
         Swal.fire({
@@ -1081,9 +949,6 @@ function checkPassword12() {
             title: 'Enhorabuena has desbloqueado todas las contraseñas y las tres cajas!',
             text: 'Se desbloqueó la última pista e imagen.',
             confirmButtonText: 'Vale',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     } else {
         Swal.fire({
@@ -1091,9 +956,6 @@ function checkPassword12() {
             title: 'Contraseña Incorrecta',
             text: '¿Qué pruebas? Tienes que ganar a Adri!',
             confirmButtonText: 'Jo',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -1113,9 +975,6 @@ function abrirCaja1() {
         title: 'HAS ABIERTO LA CAJA DE BRONCE',
         text: 'Enhorabuena, se ha desbloqueado una imagen y más tarde una pista!',
         confirmButtonText: 'OLE',
-        customClass: {
-            popup: 'my-popup-class',
-        }
     });
     localStorage.setItem(`caja1`, 'desbloqueada');
     document.querySelector('header').style.backgroundColor = '#f0f0f0';
@@ -1145,9 +1004,6 @@ function abrirCaja2() {
             title: 'HAS ABIERTO LA CAJA DE PLATA',
             text: 'Enhorabuena! Se ha desbloqueado una nueva imagen y más tarde una pista!',
             confirmButtonText: 'OLE',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
         localStorage.setItem(`caja2`, 'desbloqueada');
         document.querySelector('header').style.backgroundColor = '#f0f0f0';
@@ -1176,9 +1032,6 @@ function abrirCaja2() {
             title: 'Te va a tocar jugar a las cartas',
             text: 'Si ganas al demonio, te dirá la siguiente contraseña.',
             confirmButtonText: 'Ganaré',
-            customClass: {
-                popup: 'my-popup-class',
-            },
             willClose: () => {
                 window.location.href = 'Sota/index.html';
             }
@@ -1189,9 +1042,6 @@ function abrirCaja2() {
             title: 'Contraseña incorrecta',
             text: 'La contraseña no es correcta',
             confirmButtonText: ':(',
-            customClass: {
-                popup: 'my-popup-class',
-            }
         });
     }
 }
@@ -1271,14 +1121,18 @@ function verificarCodigoCaja3() {
         document.getElementById('cajaImagen3').src = 'img/Caja3A.png';
 
         Swal.fire({
-            icon: 'success',
-            title: 'HAS ABIERTO LA CAJA DE ORO!',
-            text: 'Enhorabuena!',
+            title: "HAS ABIERTO LA CAJA DE ORO!",
             confirmButtonText: 'OLE',
-            customClass: {
-                popup: 'my-popup-class',
-            }
-        });
+            width: 600,
+            padding: "3em",
+            background: "#716add url(img/Caja3A.png) no-repeat center center",
+            backdrop: `
+              rgba(0,0,123,0.4)
+              url("img/cat.gif")
+              left top
+              no-repeat
+            `
+          });
 
         localStorage.setItem(`caja3`, 'desbloqueada');
         document.querySelector('header').style.backgroundColor = '#f0f0f0';
@@ -1330,9 +1184,6 @@ function mostrarPista(index) {
         title: 'Pista:',
         text: mensaje,
         confirmButtonText: 'Entiendo',
-        customClass: {
-            popup: 'my-popup-class',
-        }
     });
 }
 
