@@ -9,9 +9,7 @@
     <link rel="shortcut icon" href="../img/cronoRosa.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="../img/cronoRosa.png">
     <link rel="stylesheet" type="text/css" href="css/">
-    <script type="text/javascript" src="js/"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
             display: flex;
@@ -107,8 +105,10 @@
         </div>
         <input type="hidden" name="mode" id="mode" required>
         <br />
-        <a href="reglas.html" target="_blank" id="reglas-link">Reglas</a>
-        <input type="checkbox" id="myCheckbox" name="reglas" disabled required>
+        <a href="reglas.html" id="reglas-link">Reglas</a>
+        <!-- <a href="reglas.html" target="_blank" id="reglas-link">Reglas</a> -->
+        <input type="checkbox" id="myCheckbox" name="reglas" required>
+        <!-- <input type="checkbox" id="myCheckbox" name="reglas" disabled required> -->
         <label id="check" for="myCheckbox"></label>
         <br /><br />
         <input type="submit" name="submit" value="Jugar">
@@ -146,9 +146,6 @@
                             title: 'Por favor, completa todos los campos',
                             text: 'selecciona un modo y acepta las reglas',
                             confirmButtonText: 'Vale',
-                            customClass: {
-                                popup: 'my-popup-class',
-                            }
                         });
             }
         });

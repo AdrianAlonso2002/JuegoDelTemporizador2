@@ -146,9 +146,6 @@ var rompecabezas = {
 				title: 'Enhorabuena has completado el rompecabezas!',
 				text: 'Ahora puedes pensar y escribir la contraseña que te da la pista al desbloquearse!',
 				confirmButtonText: 'Vale',
-				customClass: {
-					popup: 'my-popup-class',
-				}
 			});
 		}
 	},

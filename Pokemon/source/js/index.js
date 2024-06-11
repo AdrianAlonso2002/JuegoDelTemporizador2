@@ -72,9 +72,6 @@ function playerName() {
 			title: 'Debes ingresar un nombre',
 			text: 'Pon Paaolita y te da suerte',
 			confirmButtonText: 'Vale',
-			customClass: {
-				popup: 'my-popup-class',
-			}
 		});
 	} else {
 		namePlayer1 = $txtPlayer.value;
@@ -222,9 +219,6 @@ async function ganador($img, ganador, _user) {
 			title: 'Lo siento!',
 			text: 'Has perdido una vida!',
 			confirmButtonText: 'Vaya...',
-			customClass: {
-				popup: 'my-popup-class',
-			}
 		}).then((result) => {
 			// Después de que el usuario cierre la alerta, redirigir a ../index.html
 			if (result.isConfirmed) {
@@ -234,14 +228,14 @@ async function ganador($img, ganador, _user) {
 		});
 	} else {
 		Swal.fire({
-			icon: 'success',
-			title: 'Enhorabuena!',
-			text: 'La contraseña es: recuerdos',
-			confirmButtonText: 'Toma ya!',
-			customClass: {
-				popup: 'my-popup-class',
-			}
-		});
+            title: "Enhorabuena!",
+            text: "La contraseña es: recuerdos",
+            imageUrl: "source/images/miau.jpg",
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: "Miau",
+            confirmButtonText: 'Toma ya!'
+          });
 	}
 }
 //finaliza el juego con una animación al Pokemon perdedor y muestra el boton para volver a jugar
